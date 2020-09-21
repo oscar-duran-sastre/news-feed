@@ -1,7 +1,7 @@
-import getClient from "./../../mongo_client/index";
+import getClient from "../../mongo_client/index";
 import { ObjectId } from "mongodb";
 
-const getNews = async (req, res) => {
+const getOneNews = async (req, res) => {
   const client = getClient();
 
   try {
@@ -26,4 +26,4 @@ const getNews = async (req, res) => {
   }
 };
 
-export default getNews;
+export default getOneNews;
